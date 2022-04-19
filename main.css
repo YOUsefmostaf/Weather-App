@@ -127,6 +127,7 @@ section {
 }
 
 .card {
+    display: none;
   position: absolute;
   width: 100%;
   -webkit-transition: all 2s ease-in-out;
