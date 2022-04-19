@@ -131,8 +131,8 @@ section {
   width: 100%;
   -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
-  -webkit-transform: translate(300%);
-          transform: translate(300%);
+  -webkit-transform: translate(600%);
+          transform: translate(600%);
   background-color: #fff;
   padding: 25px;
   border-radius: 10px;
