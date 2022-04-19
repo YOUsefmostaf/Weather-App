@@ -18,7 +18,7 @@ back.addEventListener("click", () => {
   setTimeout(()=>{
     document.querySelector(".place").style.transform = "translate(0%)";
   },100)
-  document.querySelector(".card").style.transform = "translate(300%)";
+  document.querySelector(".card").style.transform = "translate(600%)";
   setTimeout(()=>{
     document.querySelector(".card").style.display = "none";
   },2000)
@@ -61,7 +61,7 @@ function weatherDetails(info) {
     document.querySelector(".error").style.top = "30px";
   } else {
     document.querySelector(".error").style.top = "-30px";
-    document.querySelector(".place").style.transform = "translate(-300%)";
+    document.querySelector(".place").style.transform = "translate(-600%)";
 
     setTimeout(()=>{
       document.querySelector(".card").style.transform = "translate(0%)";
