@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Weather App</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="error">
+      <h4>City Name Is Not Valid</h4>
+    </div>
+    <section>
+      <div class="place">
+        <div class="header">Wheather App</div>
+        <hr />
+        <input type="text" placeholder="Enter City Name" id="input" />
+        <div class="separator"></div>
+        <button type="button" id="button">Get Device Location</button>
+      </div>
+      <div class="card">
+        <div class="header">
+          <i class="fa-solid fa-arrow-left-long" id="back"></i>Wheather App
+        </div>
+        <hr />
+        <div class="first">
+          <span id="city"></span>
+          <span id="hour"></span>
+        </div>
+        <div class="second">
+          <img id="photo" />
+          <p id="description"></p>
+        </div>
+        <div class="third">
+          <div>
+            <p id="1"></p>
+            <p id="2"></p>
+            <p id="3"></p>
+          </div>
+          <p id="celeciouse"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

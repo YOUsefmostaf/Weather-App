@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+$color: #43affc;
+body {
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #43affc;
+  position: relative;
+overflow: hidden;
+}
+.error{
+  transition: all 1.5s ease-in-out;
+  position: absolute;
+  top: -10%;
+  background-color: #ff5454;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+}
+section {
+  width: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.place {
+  width: 100%;
+  position: absolute;
+  transition: all 2s ease-in-out;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  .header {
+    margin-bottom: 15px;
+    color: $color;
+  }
+  hr {
+    margin-bottom: 15px;
+    background: #ddd;
+    border: 1px solid #ddd;
+  }
+  input {
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 9px;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    opacity: .5;
+    &:hover {
+      border: 1px solid $color;
+      opacity: 1;
+    }
+  }
+  .separator {
+    margin-bottom: 15px;
+    height: 1px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+        content: "or";
+        background-color: white;
+        padding: 0px 15px;
+        color: #b3b3b3;
+    }
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid $color;
+    background-color: $color;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: #31a4f7;
+    }
+  }
+}
+.card {
+  position: absolute;
+  width: 100%;
+  transition: all 2s ease-in-out;
+  transform: translate(300%);
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  color: black;
+  .header {
+    margin-bottom: 15px;
+    color: $color;
+  }
+  #back{
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  hr {
+    margin-bottom: 15px;
+    background: #ddd;
+    border: 1px solid #ddd;
+  }
+  i{
+    color: $color;
+  }
+  .first {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    span:first-of-type {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid $color;
+      &:hover{
+        background-color: $color;
+        color: white;
+        transition: all .5s;
+      }
+    }
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    img {
+      width: 100px;
+    }
+  }
+  .third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    > p {
+      font-size: 30px;
+    }
+  }
+}
